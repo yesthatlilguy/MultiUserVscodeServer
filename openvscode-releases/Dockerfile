@@ -12,6 +12,7 @@ ARG OPENVSCODE_SERVER_ROOT="/home/.openvscode-server"
 
 # Downloading the latest VSC Server release and extracting the release archive
 # Rename `openvscode-server` cli tool to `code` for convenience
+
 RUN if [ -z "${RELEASE_TAG}" ]; then \
         echo "The RELEASE_TAG build arg must be set." >&2 && \
         exit 1; \
